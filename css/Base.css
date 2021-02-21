@@ -1,0 +1,27 @@
+:root {
+    --color-main: #EEEEEE;
+    --color-ButtonDefolt: #FB565A;
+    --color-buttonStyle1: #00CA74;
+    --color-buttonStyle2: #EFC849;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #283136;
+}
+
+h1,
+h2,
+h3 {
+    color: #000;
+}
+
+header {
+    background: var(--color-main);
+}
