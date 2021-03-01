@@ -18,21 +18,25 @@
 
 <body>
     <header>
-        <nav>
-            <a class="logo">
-                <img src="img/nerds-logo.svg" alt="logo">
-            </a>
-            <ul class="menu">
-                <li><a href="#">Студия</a></li>
-                <li><a href="#">Клиенты</a></li>
-                <li><a href="#">Магазин</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-            <div class="basket">
-                <img src="img/nerds-logo.svg" alt="icon">
-                <a href="#">Корзина</a>
+        <div class="main-width">
+            <div class="header__inner">
+                <nav>
+                    <a class="logo">
+                        <img src="img/nerds-logo.svg" alt="logo">
+                    </a>
+                    <ul class="menu-text">
+                        <li class="nav-text__item"><a href="#">Студия</a></li>
+                        <li class="nav-text__item"><a href="#">Клиенты</a></li>
+                        <li class="nav-text__item"><a href="#">Магазин</a></li>
+                        <li class="nav-text__item"><a href="#">Контакты</a></li>
+                    </ul>
+                    <div class="basket ">
+                        <img src="img/cart-icon.svg" alt="icon">
+                        <a href="#" class="nav-text__item">Корзина</a>
+                    </div>
+                </nav>
             </div>
-        </nav>
+        </div>
     </header>
     <main>
         <h1>
@@ -40,84 +44,104 @@
         </h1>
         <section class="features">
             <h2>Особенности</h2>
-            <ul class="features__gallery">
-                <li class="features__gallery__item">
-                    <h3>Только ночь,только хардкор</h3>
-                    <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-                    <a href="#" class="button">УЗНАТЬ БОЛЬШЕ</a>
-                    <img src="img/nerds-index-slide3 1.png" alt="slide">
-                </li>
-                <li class="features__gallery__item">
-                    <h3>Любим математику как никто другой</h3>
-                    <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-                    <a href="#" class="button">УЗНАТЬ БОЛЬШЕ</a>
-                    <img src="img/nerds-index-slide2 1.png" alt="slide">
-                </li>
-                <li class="features__gallery__item">
-                    <h3>Долго, дорого, скрупулезно.</h3>
-                    <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-                    <a href="#" class="button">УЗНАТЬ БОЛЬШЕ</a>
-                    <img src="img/nerds-index-slide1 1.png" alt="slide">
-                </li>
-            </ul>
+            <div class="main-width">
+                <ul class="features__gallery">
+                    <li class="features__item activ">
+                        <div class="features__text">
+                            <h3>Только ночь,<br>только хардкор</h3>
+                            <p>Работать днем, как все? Мы против этого. <br>Ближе к полуночи работа только начинается.</p>
+                            <a href="#" class="button button-style1">УЗНАТЬ БОЛЬШЕ</a>
+                        </div>
+                        <div class="features__picture">
+                            <img src="img/nerds-index-slide3 1.png" alt="slide">
+                        </div>
+                    </li>
+                    <li class="features__item ">
+                        <div class="features__text">
+                            <h3>Любим математику<br> как никто другой</h3>
+                            <p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций</p>
+                            <a href="#" class="button button-style1">УЗНАТЬ БОЛЬШЕ</a>
+                        </div>
+                        <div class="features__picture">
+                            <img src="img/nerds-index-slide2 1.png" alt="slide">
+                        </div>
+                    </li>
+                    <li class="features__item ">
+                        <div class="features__text">
+                            <h3>Долго, дорого,<br> скрупулезно.</h3>
+                            <p>Математически выверенный дизайн <br>для вашего сайта или мобильного приложения.</p>
+                            <a href="#" class="button button-style1">УЗНАТЬ БОЛЬШЕ</a>
+                        </div>
+                        <div class="features__picture">
+                            <img src="img/nerds-index-slide1 1.png" alt="slide">
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section class="Products">
             <h2>Продукты</h2>
-            <ul class="Products__list">
-                <li class="Products__items">
-                    <img src="img/illustration-1 1.jpg" alt="ill">
-                    <h3>Веб-сайты</h3>
-                    <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-                    <a href="#" class="button">ЗАКАЗАТЬ</a>
-                </li>
-                <li class="Products__items">
-                    <img src="img/illustration-2 1.svg" alt="ill">
-                    <h3>Веб-сайты</h3>
-                    <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-                    <a href="#" class="button">ЗАКАЗАТЬ</a>
-                </li>
-                <li class="Products__items">
-                    <img src="img/illustration-3 1.png" alt="ill">
-                    <h3>Презентации</h3>
-                    <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-                    <a href="#" class="button">ЗАКАЗАТЬ</a>
-                </li>
-            </ul>
+            <div class="main-width">
+                <ul class="Products__list">
+                    <li class="Products__items">
+                        <img src="img/illustration-1 1.jpg" alt="ill">
+                        <h3>Веб-сайты</h3>
+                        <p>Мир никогда не будет прежним <br> после того как увидит ваш сайт!</p>
+                        <a href="#" class="button button-style1">ЗАКАЗАТЬ</a>
+                    </li>
+                    <li class="Products__items">
+                        <img src="img/illustration-2 1.svg" alt="ill">
+                        <h3>Веб-сайты</h3>
+                        <p>Покорите топ-10 приложений <br> в AppStore и Google Play</p>
+                        <a href="#" class="button button-style2">ЗАКАЗАТЬ</a>
+                    </li>
+                    <li class="Products__items">
+                        <img src="img/illustration-3 1.png" alt="ill">
+                        <h3>Презентации</h3>
+                        <p>Вы даже не подозреваете, <br> насколько вы изумительны!</p>
+                        <a href="#" class="button button-style3">ЗАКАЗАТЬ</a>
+                    </li>
+                </ul>
+            </div>
         </section>
-        <section class="About">
-            <h2>О нас</h2>
-            <p class="About__big-text">
-                Мы — маленькая, но гордая дизайн-студия из Краснодара.
-            </p>
-            <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-            <p class="About__strong-text">Выполняем заказы на разработку:</p>
-            <ul class="About__list">
-                <li> Веб-сайтов любой сложности</li>
-                <li> Мобильных приложений для iOS и Android</li>
-                <li> Слайдшоу и видео для корпоративных презентаций</li>
-            </ul>
-        </section>
-        <section class="conditions">
-            <h2>Точность во всем</h2>
-            <img src="img/nerds-illustration 1.png" alt="logo">
-            <p>
-                с 2004 года Любим точность во всем:
-            </p>
-            <ul class="conditions__list">
-                <li class="conditions__item">
-                    <p class="digit"><span class="digit_big">146</span><span class="digit_percent">%</span></p>
-                    <p class="desctiption"><span>Уровень самоотдачи</span></p>
-                </li>
-                <li class="conditions__item">
-                    <p class="digit"><span class="digit_big">100</span><span class="digit_percent">%</span></p>
-                    <p class="desctiption"><span>Соблюдение сроков</span></p>
-                </li>
-                <li class="conditions__item">
-                    <p class="digit"><span class="digit_big">50</span><span class="digit_percent">%</span></p>
-                    <p class="desctiption"><span>Минимальная предоплата</span></p>
-                </li>
-            </ul>
-        </section>
+        <div class="main-width">
+            <div class="content-About-conditions">
+                <section class="About">
+                    <h2>О нас</h2>
+                    <p class="About__big-text">
+                        Мы — маленькая, но гордая дизайн-студия из Краснодара.
+                    </p>
+                    <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+                    <p class="About__strong-text">Выполняем заказы на разработку:</p>
+                    <ul class="About__list">
+                        <li> Веб-сайтов любой сложности</li>
+                        <li> Мобильных приложений для iOS и Android</li>
+                        <li> Слайдшоу и видео для корпоративных презентаций</li>
+                    </ul>
+                </section>
+                <section class="conditions">
+                    <h2>Точность во всем</h2>
+                    <img src="img/nerds-illustration 1.png" alt="logo">
+                    <p>
+                        с 2004 года Любим точность во всем:
+                    </p>
+                    <ul class="conditions__list">
+                        <li class="conditions__item">
+                            <p class="digit"><span class="digit_big">146</span><span class="digit_percent">%</span></p>
+                            <p class="desctiption"><span>Уровень самоотдачи</span></p>
+                        </li>
+                        <li class="conditions__item">
+                            <p class="digit"><span class="digit_big">100</span><span class="digit_percent">%</span></p>
+                            <p class="desctiption"><span>Соблюдение сроков</span></p>
+                        </li>
+                        <li class="conditions__item">
+                            <p class="digit"><span class="digit_big">50</span><span class="digit_percent">%</span></p>
+                            <p class="desctiption"><span>Минимальная предоплата</span></p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
         <section class="Partners">
             <h2>Партнеры</h2>
             <ul class="Partners__list">
@@ -131,21 +155,33 @@
     <footer>
         <section class="location">
             <h2>Как нас найти</h2>
-            <!--карта-->
-            <p class="location__Name-Comp">NЁRDS DESIGN STUDIO</p>
-            <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-            <p>тел.
-                <a href="tel:78122757575"></a>+7 (812) 275-75-75</p>
-            <a href="#" class="button">Напишите нам</a>
+            <div class="map">
+                <div class="main-width">
+                    <div class="map-info">
+                        <p class="map__Name-Comp">NЁRDS DESIGN STUDIO</p>
+                        <p class="map__adres">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+                        <p class="map__tel">тел.
+                            <a href="tel:78122757575"></a>+7 (812) 275-75-75
+                        </p>
+                        <a href="#" class="button">Напишите нам</a>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="Stock">
-            <h2>Давайте дружить, это выгодно!</h2>
-            <p>Скидка 10% для друзей из социальных сетей.</p>
-            <ul class="social-network">
-                <li class="social-network__item"><img src="img/Shape 2 copy 3.png" alt=""></li>
-                <li class="social-network__item"><img src="img/Shape 2 copy 4.png" alt=""></li>
-                <li class="social-network__item"><img src="img/Shape 2 copy 5.png" alt=""></li>
-            </ul>
+            <div class="main-width">
+                <div class="footer__inner">
+                    <ul class="social-network">
+                        <li class="social-network__item social-network__vk"><img src="img/vk-icon.png" alt=""></li>
+                        <li class="social-network__item social-network__vk"><img src="img/fb-icon.png" alt=""></li>
+                        <li class="social-network__item social-network__vk"><img src="img/insta-icon.png" alt=""></li>
+                    </ul>
+                    <div class="Stock__text">
+                        <h2>Давайте дружить, это выгодно!</h2>
+                        <p>Скидка 10% для друзей из социальных сетей.</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </footer>
     <section class="pop">
