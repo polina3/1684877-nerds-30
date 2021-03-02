@@ -2,7 +2,7 @@
     1. главная часть
     2. особенности
     3. продукты
-
+    4. партнеры
 */
 
 
@@ -103,4 +103,78 @@ main h1 {
     height: 50px;
 }
 
-.content-About-conditions {}
+.content-About-conditions {
+    display: grid;
+    grid-template-columns: 7fr 1fr 4fr;
+}
+
+.About {
+    grid-column: 1;
+}
+
+.About h2 {
+    display: none;
+}
+
+.conditions {
+    grid-column: 3;
+}
+
+.conditions h2 {
+    display: none;
+}
+
+.About__big-text {
+    font-weight: 500;
+    font-size: 45px;
+    color: var(--color-text3)
+}
+
+.About__text {
+    font-weight: normal;
+    line-height: 24px;
+}
+
+.About__strong-text {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.About__list {
+    padding-left: 32px;
+}
+
+.About__item {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.About__item:last-child {
+    margin: 0;
+}
+
+.conditions__strong-text {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.conditions__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+/*Partners*/
+
+.Partners h2 {
+    display: none;
+}
+
+.Partners__list {
+    display: flex;
+    justify-content: space-between;
+}

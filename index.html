@@ -111,18 +111,18 @@
                     <p class="About__big-text">
                         Мы — маленькая, но гордая дизайн-студия из Краснодара.
                     </p>
-                    <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+                    <p class="About__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
                     <p class="About__strong-text">Выполняем заказы на разработку:</p>
                     <ul class="About__list">
-                        <li> Веб-сайтов любой сложности</li>
-                        <li> Мобильных приложений для iOS и Android</li>
-                        <li> Слайдшоу и видео для корпоративных презентаций</li>
+                        <li class="About__item"> Веб-сайтов любой сложности</li>
+                        <li class="About__item"> Мобильных приложений для iOS и Android</li>
+                        <li class="About__item"> Слайдшоу и видео для корпоративных презентаций</li>
                     </ul>
                 </section>
                 <section class="conditions">
                     <h2>Точность во всем</h2>
                     <img src="img/nerds-illustration 1.png" alt="logo">
-                    <p>
+                    <p class="conditions__strong-text">
                         с 2004 года Любим точность во всем:
                     </p>
                     <ul class="conditions__list">
@@ -143,13 +143,15 @@
             </div>
         </div>
         <section class="Partners">
-            <h2>Партнеры</h2>
-            <ul class="Partners__list">
-                <li class="Partners__item"><img src="img/Group 5.png" alt=""></li>
-                <li class="Partners__item"><img src="img/logo-2 1.svg" alt=""></li>
-                <li class="Partners__item"><img src="img/logo-3 1.png" alt=""></li>
-                <li class="Partners__item"><img src="img/logo-4 1.png" alt=""></li>
-            </ul>
+            <div class="main-width">
+                <h2>Партнеры</h2>
+                <ul class="Partners__list">
+                    <li class="Partners__item"><img src="img/Group 5.png" alt=""></li>
+                    <li class="Partners__item"><img src="img/logo-2 1.svg" alt=""></li>
+                    <li class="Partners__item"><img src="img/logo-3 1.png" alt=""></li>
+                    <li class="Partners__item"><img src="img/logo-4 1.png" alt=""></li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer>
@@ -163,7 +165,7 @@
                         <p class="map__tel">тел.
                             <a href="tel:78122757575"></a>+7 (812) 275-75-75
                         </p>
-                        <a href="#" class="button">Напишите нам</a>
+                        <a href="#" class="button button-style1">Напишите нам</a>
                     </div>
                 </div>
             </div>
@@ -185,22 +187,27 @@
         </section>
     </footer>
     <section class="pop">
-        <h2>Напишите нам</h2>
-        <p>
-            <label for="name">Ваше имя:</label>
-            <input type="text" placeholder="Имя Фамилия" id="name">
-        </p>
-        <p>
-            <label for="email">Ваш email:</label>
-            <input type="email" placeholder="email@example.com " id="email">
-        </p>
-        <p>
-            <label for="message">Текст письма:</label>
-            <textarea id="message" placeholder="В свободной форме"></textarea>
-        </p>
-        <p>
-            <button type="submit" class="button">Отправить</button>
-        </p>
+        <div class="pop-content">
+            <h2>Напишите нам</h2>
+            <div class="pop-DataPerson">
+                <p>
+                    <label for="name" class="pop__label">Ваше имя:</label>
+                    <input type="text" placeholder="Имя Фамилия" id="name" class="pop__InputText">
+                </p>
+                <p>
+                    <label for="email" class="pop__label">Ваш email:</label>
+                    <input type="email" placeholder="email@example.com " id="email" class="pop__InputText">
+                </p>
+            </div>
+            <p>
+                <label for="message" class="pop__label">Текст письма:</label>
+                <textarea id="message" placeholder="В свободной форме" class="pop__InputText"></textarea>
+            </p>
+            <p>
+                <button type="submit" class="button button-style1">Отправить</button>
+            </p>
+        </div>
+
     </section>
 </body>
 
