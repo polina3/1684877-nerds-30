@@ -42,157 +42,164 @@
         <div class="title">
             <h1>Магазин готовых шаблонов</h1>
         </div>
-        <section class="filter">
-            <h2>Фильтр</h2>
-            <form method="get" action="https://echo.htmlacademy.ru">
-                <fieldset class="filter-price">
-                    <legend>Стоимость:</legend>
-                    <label for="Price-of">От</label>
-                    <input type="number" id="Price-of">
-                    <Label for="Price-up-to">До</Label>
-                    <input type="number" id="Price-up-to">
-                </fieldset>
-                <fieldset clasa="filter-grid">
-                    <legend>Сетка:</legend>
-                    <ul>
-                        <li>
+        <div class="main-width">
+            <div class="content">
+                <section class="filter">
+                    <h2>Фильтр</h2>
+                    <form method="get" action="https://echo.htmlacademy.ru">
+                        <fieldset class="filter-price">
+                            <legend>Стоимость:</legend>
+                            <label for="Price-of">От</label>
+                            <input type="number" id="Price-of">
+                            <Label for="Price-up-to">До</Label>
+                            <input type="number" id="Price-up-to">
+                        </fieldset>
+                        <fieldset clasa="filter-grid">
+                            <legend>Сетка:</legend>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="product-grid" value="Adaptive" id="filter-Adaptive">
+                                    <div class="radio-img"></div>
+                                    <label for="filter-Adaptive">Адаптивная</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="product-grid" value="Fixed" id="filter-Fixed" checked>
+                                    <div class="radio-img"></div>
+                                    <label for="filter-Fixed">Фиксированная</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="product-grid" value="Rubber" id="filter-Rubber">
+                                    <div class="radio-img"></div>
+                                    <label for="filter-Rubber">Резиновая</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset class="filter-features">
+                            <legend>Особенности:</legend>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" name="Slider" id="filter-Slider" checked>
+                                    <div class="checkbox-img"></div>
+                                    <label for="filter-Slider">Слайдер</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="Advantages-block" id="filter-Advantages-block">
+                                    <div class="checkbox-img"></div>
+                                    <label for="filter-Advantages-block">Блок преимуществ</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="news" id="filter-news" checked>
+                                    <div class="checkbox-img"></div>
+                                    <label for="filter-news">Новости</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="Gallery" id="filter-Gallery">
+                                    <div class="checkbox-img"></div>
+                                    <label for="filter-Gallery">Галерея</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="Basket" id="filter-Basket">
+                                    <div class="checkbox-img"></div>
+                                    <label for="filter-Basket">Корзина</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <button type="submit" class="button button-style4">Показать</button>
+                    </form>
+                </section>
+                <section class="product">
+                    <div class="sort">
 
-                            <input type="radio" name="product-grid" value="Adaptive" id="filter-Adaptive">
-                            <div class="radio-img"></div>
-                            <label for="filter-Adaptive">Адаптивная</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="product-grid" value="Fixed" id="filter-Fixed" checked>
-                            <div class="radio-img"></div>
-                            <label for="filter-Fixed">Фиксированная</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="product-grid" value="Rubber" id="filter-Rubber">
-                            <div class="radio-img"></div>
-                            <label for="filter-Rubber">Резиновая</label>
-                        </li>
-                    </ul>
-                </fieldset>
-                <fieldset class="filter-features">
-                    <legend>Особенности:</legend>
-                    <ul>
-                        <li>
-                            <input type="checkbox" name="Slider" id="filter-Slider" checked>
-                            <div class="checkbox-img"></div>
-                            <label for="filter-Slider">Слайдер</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="Advantages-block" id="filter-Advantages-block">
-                            <div class="checkbox-img"></div>
-                            <label for="filter-Advantages-block">Блок преимуществ</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="news" id="filter-news" checked>
-                            <div class="checkbox-img"></div>
-                            <label for="filter-news">Новости</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="Gallery" id="filter-Gallery">
-                            <div class="checkbox-img"></div>
-                            <label for="filter-Gallery">Галерея</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="Basket" id="filter-Basket">
-                            <div class="checkbox-img"></div>
-                            <label for="filter-Basket">Корзина</label>
-                        </li>
-                    </ul>
-                </fieldset>
-                <button type="submit" class="button">Показать</button>
-            </form>
-        </section>
-        <section>
-            <h2>Сортировка:</h2>
-            <form method="get" action="https://echo.htmlacademy.ru">
-                <fieldset>
-                    <legend>Сортировка:</legend>
-                    <ul>
-                        <li>
-                            <input type="checkbox" name="price" id="Sorting-price" checked>
-                            <label for="Sorting-price">По цене</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="Type" id="Sorting-Type">
-                            <label for="Sorting-Type">Блок типу</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="name" id="Sorting-name" checked>
-                            <label for="Sorting-name">по названию</label>
-                        </li>
-                        <li>
-                            <div class="descending-order">
+                        <form method="get" action="https://echo.htmlacademy.ru">
+                            <fieldset>
+                                <legend>Сортировка:</legend>
+                                <h2>Сортировка:</h2>
+                                <ul class="sort-list">
+                                    <li>
+                                        <input type="checkbox" name="price" id="Sorting-price" checked>
+                                        <label for="Sorting-price">По цене</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="Type" id="Sorting-Type">
+                                        <label for="Sorting-Type">Блок типу</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="name" id="Sorting-name" checked>
+                                        <label for="Sorting-name">по названию</label>
+                                    </li>
+                                    <li>
+                                        <div class="descending-order">
 
+                                        </div>
+                                        <div class="ascending-order">
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <ul class="list-product">
+                        <li>
+                            <img src="img/maket1.jpg" alt="maket">
+                            <div class="product__about">
+                                <h3>Sedona</h3>
+                                <p>Информационный сайт для туристов</p> <a href="#">9 900 ₽</a>
                             </div>
-                            <div class="ascending-order">
 
+                        </li>
+                        <li>
+                            <img src="img/maket2.jpg" alt="maket">
+                            <div class="product__about">
+                                <h3>Pink App</h3>
+                                <p>Продуктовый лендинг приложения для iOS и Android</p> <a href="#">9 900 ₽</a>
+                            </div>
+
+                        </li>
+                        <li>
+                            <img src="img/maket3.jpg" alt="maket">
+                            <div class="product__about">
+                                <h3>Barbershop</h3>
+                                <p>Сайт салона красоты.Для мужчин, да.</p> <a href="#">9 900 ₽</a>
+                            </div>
+
+                        </li>
+                        <li>
+                            <img src="img/maket4.jpg" alt="maket">
+                            <div class="product__about">
+                                <h3>MISHKA</h3>
+                                <p>Интернет-магазин вязаных игрушек</p> <a href="#">9 900 ₽</a>
+                            </div>
+
+                        </li>
+                        <li>
+                            <img src="img/maket5.jpg" alt="maket">
+                            <div class="product__about">
+                                <h3>A Plus</h3>
+                                <p>Лендинг курсов повышения квалификации</p> <a href="#">9 900 ₽</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/maket6.jpg" alt="maket">
+                            <div class="product__about">
+                                <h3>КВАСТ</h3>
+                                <p>Промо-сайт производителя крафтового кваса</p> <a href="#">9 900 ₽</a>
                             </div>
                         </li>
                     </ul>
+                    <ul class="pages-list">
+                        <li class="pages-item"><a href="#">1</a></li>
+                        <li class="pages-item"><a href="#">2</a></li>
+                        <li class="pages-item"><a href="#">3</a></li>
+                        <li class="pages-item">
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
 
-                </fieldset>
-            </form>
-        </section>
-        <section class="product">
-            <ul class="list-product">
-                <li>
-                    <img src="img/maket1.jpg" alt="maket">
-                    <div class="product__about">
-                        <h3>Sedona</h3>
-                        <p>Информационный сайт для туристов</p> <a href="#">9 900 ₽</a>
-                    </div>
+        </div>
 
-                </li>
-                <li>
-                    <img src="img/maket2.jpg" alt="maket">
-                    <div class="product__about">
-                        <h3>Pink App</h3>
-                        <p>Продуктовый лендинг приложения для iOS и Android</p> <a href="#">9 900 ₽</a>
-                    </div>
-
-                </li>
-                <li>
-                    <img src="img/maket3.jpg" alt="maket">
-                    <div class="product__about">
-                        <h3>Barbershop</h3>
-                        <p>Сайт салона красоты.Для мужчин, да.</p> <a href="#">9 900 ₽</a>
-                    </div>
-
-                </li>
-                <li>
-                    <img src="img/maket4.jpg" alt="maket">
-                    <div class="product__about">
-                        <h3>MISHKA</h3>
-                        <p>Интернет-магазин вязаных игрушек</p> <a href="#">9 900 ₽</a>
-                    </div>
-
-                </li>
-                <li>
-                    <img src="img/maket5.jpg" alt="maket">
-                    <div class="product__about">
-                        <h3>A Plus</h3>
-                        <p>Лендинг курсов повышения квалификации</p> <a href="#">9 900 ₽</a>
-                    </div>
-                </li>
-                <li>
-                    <img src="img/maket6.jpg" alt="maket">
-                    <div class="product__about">
-                        <h3>КВАСТ</h3>
-                        <p>Промо-сайт производителя крафтового кваса</p> <a href="#">9 900 ₽</a>
-                    </div>
-                </li>
-            </ul>
-            <ul class="pages-list">
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">Следующая</a></li>
-            </ul>
-        </section>
     </main>
     <footer>
         <section class="location">

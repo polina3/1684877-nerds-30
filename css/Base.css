@@ -19,9 +19,11 @@
     --color-Defolt1-hover: #E74246;
     --color-Defolt2-hover: #00BC6C;
     --color-Defolt3-hover: #EAB534;
+    --color-main-hover: #DFDFDF;
     --color-Defolt1-active: #D7373B;
     --color-Defolt2-active: #00AA62;
     --color-Defolt3-active: #E5A722;
+    --color-main-active: #D5D5D5;
     --color-text1: #283136;
     --color-text2: #666;
     --color-text3: #000;
@@ -247,6 +249,7 @@ nav {
     padding-top: 17px;
     padding-bottom: 15px;
     border-radius: 3px;
+    border: none;
     color: #fff;
     text-align: center;
     transition: .3s;
@@ -272,6 +275,11 @@ nav {
     background-color: var(--color-Defolt3);
 }
 
+.button.button-style4 {
+    background-color: var(--color-main);
+    color: var(--color-text3);
+}
+
 .button.button-style1:hover {
     background-color: var(--color-Defolt1-hover);
 }
@@ -284,6 +292,10 @@ nav {
     background-color: var(--color-Defolt3-hover);
 }
 
+.button.button-style4:hover {
+    background-color: var(--color-main-hover);
+}
+
 .button.button-style1:active {
     background-color: var(--color-Defolt1-active);
 }
@@ -294,6 +306,12 @@ nav {
 
 .button.button-style3:active {
     background-color: var(--color-Defolt3-active);
+}
+
+.button.button-style4:active {
+    background-color: var(--color-main-active);
+    color: #0000004d;
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 
