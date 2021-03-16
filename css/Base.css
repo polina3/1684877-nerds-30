@@ -1,17 +1,20 @@
 /*
-    1. переменные
-    2. теги 
-    3. класс для размера
-    4. шапка
-    5. подвал
-    6. кнопки
-    7. pop
+    - переменные
+    - теги 
+    - класс для размера
+    - шапка
+    - подвал
+    - поля ввода
+    - кнопки
+    - pop
+    - radio
+    - checkbox
 */
 
 
 /*переменные*/
 
-:root {
+ :root {
     --color-main: #EEEEEE;
     --color-Defolt1: #FB565A;
     --color-Defolt2: #00CA74;
@@ -147,13 +150,13 @@ nav {
 }
 
 .map {
-    width: 1440px;
-    max-height: 416px;
+    max-height: 452px;
     margin: 0 auto;
     background-image: url('../img/map.png');
+    background-size: cover;
     background-position: center;
-    background-size: 100% 100%;
     padding: 54px 0;
+    background-repeat: no-repeat;
 }
 
 .map-info {
@@ -221,10 +224,11 @@ nav {
     border-radius: 50%;
     background-color: #E1E1E1;
     text-align: center;
-    display: inline-grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 9px;
+    transition: .3s;
 }
 
 .social-network__item:last-child {
@@ -233,12 +237,44 @@ nav {
 
 .social-network__item:hover {
     background-color: var(--color-Defolt1);
+    transition: .3s;
 }
 
 .social-network__item img {
     grid-row: 2;
     grid-column: 2;
     justify-self: center;
+}
+
+
+/*поля ввода*/
+
+.Input-Text {
+    background: #FFFFFF;
+    border: 2px solid #D7DCDE;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 360px;
+    height: 50px;
+    padding: 16px;
+    font-size: 16px;
+    line-height: 18px;
+    transition: .3s;
+}
+
+.Input-Text:hover {
+    border-color: #B4B9BB;
+    transition: .3s;
+}
+
+.Input-Text:focus {
+    border-color: var(--color-text3);
+    transition: .3s;
+}
+
+.Input-Text.error {
+    border-color: var(--color-Defolt1-hover);
+    transition: .3s;
 }
 
 
@@ -253,6 +289,10 @@ nav {
     color: #fff;
     text-align: center;
     transition: .3s;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
 }
 
 .button:hover {
@@ -318,21 +358,127 @@ nav {
 /*pop*/
 
 .pop {
+    display: none;
     width: 960px;
-    height: 590px;
+    height: 528px;
     padding: 63px 100px 84px 100px;
+    position: absolute;
+    left: 240px;
+    top: 1706px;
+    background: #fff;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.pop-top {
+    margin-bottom: 37px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pop-top h2 {
+    font-size: 45px;
+    line-height: 53px;
+}
+
+.pop-close svg:hover path {
+    fill-opacity: 1;
+    transition: 0.3s;
+}
+
+.pop-close svg path {
+    transition: 0.3s;
 }
 
 .pop__label {
     display: block;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 10px;
 }
 
 .pop-DataPerson {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+    margin-bottom: 34px;
+}
+
+.pop-message {
+    margin-bottom: 47px;
 }
 
 .pop__InputText {
     width: 100%;
+}
+
+.pop .button {
+    width: 259px;
+    height: 50px;
+}
+
+
+/*radio*/
+
+.radio-img {
+    flex: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 3px solid #4d4d4d4d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    background-color: #fff;
+}
+
+.radio-img:before {
+    content: "";
+    display: block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+input[type="radio"]:checked+.radio-img:before {
+    background-color: #4d4d4d4d;
+}
+
+
+/*checkbox*/
+
+.checkbox-img {
+    flex: none;
+    width: 23px;
+    height: 23px;
+    margin-right: 10px;
+    border: 2px solid #4d4d4d4d;
+    border-radius: 3px;
+    position: relative;
+}
+
+.checkbox-img:before {
+    content: "";
+    display: block;
+    width: 21px;
+    height: 18px;
+    background-color: transparent;
+    background-size: contain;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+}
+
+input[type="checkbox"]:checked+.checkbox-img {
+    background-image: url('../img/Checkbox/Shape1.svg');
+    border: none;
+    border-radius: 0;
+    opacity: 0.3;
+}
+
+input[type="checkbox"]:checked+.checkbox-img:before {
+    background-image: url('../img/Checkbox/Shape.svg');
 }

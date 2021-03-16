@@ -67,6 +67,7 @@ main h1 {
 .Products {
     padding-top: 78px;
     padding-bottom: 80px;
+    border-bottom: 2px solid var(--color-main);
 }
 
 .Products h2 {
@@ -106,10 +107,12 @@ main h1 {
 .content-About-conditions {
     display: grid;
     grid-template-columns: 7fr 1fr 4fr;
+    margin-top: 40px;
 }
 
 .About {
     grid-column: 1;
+    margin-top: 34px;
 }
 
 .About h2 {
@@ -118,6 +121,12 @@ main h1 {
 
 .conditions {
     grid-column: 3;
+}
+
+.conditions img {
+    display: block;
+    width: 360px;
+    height: 208px;
 }
 
 .conditions h2 {
@@ -133,22 +142,40 @@ main h1 {
 .About__text {
     font-weight: normal;
     line-height: 24px;
+    font-size: 16px;
+    margin-top: 32px;
+    margin-bottom: 40px;
 }
 
 .About__strong-text {
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 23px;
 }
 
-.About__list {
+
+/*.About__list {
     padding-left: 32px;
-}
+}*/
 
 .About__item {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 16px;
+    position: relative;
+    padding-left: 32px;
+}
+
+.About__item::before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: var(--color-Defolt1);
+    position: absolute;
+    top: 10px;
+    left: 0px;
 }
 
 .About__item:last-child {
@@ -160,6 +187,8 @@ main h1 {
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
+    margin-top: 37px;
+    margin-bottom: 31px;
 }
 
 .conditions__list {
@@ -167,8 +196,38 @@ main h1 {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.digit {
+    margin-bottom: 10px;
+}
 
-/*Partners*/
+.digit_big {
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 64px;
+}
+
+.digit_percent {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 40px;
+    vertical-align: top;
+}
+
+
+/*партнеры*/
+
+.Partners {
+    height: 182px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0;
+}
+
+.Partners .main-width,
+.Partners .Partners__list {
+    height: 100%;
+}
 
 .Partners h2 {
     display: none;
@@ -177,4 +236,13 @@ main h1 {
 .Partners__list {
     display: flex;
     justify-content: space-between;
+    border-top: 2px solid var(--color-main);
+    border-bottom: 2px solid var(--color-main);
+}
+
+.Partners__item {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
