@@ -22,7 +22,9 @@
 .filter {
     grid-column: 1;
 }
-
+.filter h2{
+    display: none;
+}
 .product {
     grid-column: 3;
 }
@@ -46,6 +48,7 @@
 .filter h2,
 .sort {
     margin-bottom: 54px;
+    text-transform: uppercase;
 }
 
 .sort legend {
@@ -82,7 +85,20 @@
     line-height: 18px;
     margin: 60px 0;
 }
-
+.pages-item.active{
+    background-color: #fff;
+    border: 3px solid #DBDBDB;
+}
+.pages-item:hover{
+    background-color: #DFDFDF;
+}
+.pages-item:active{
+    background-color: #D5D5D5;
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1)
+}
+.pages-item:active a{
+    opacity: .3;
+}
 .filter-form fieldset {
     display: block;
     margin-bottom: 50px;
@@ -91,8 +107,8 @@
 .filter-price legend,
 .filter-grid legend,
 .filter-features legend {
-    font-weight: bold;
-    font-size: 18px;
+    font-weight: 900;
+    font-size: 20px;
     line-height: 30px;
     text-transform: uppercase;
     color: #000000;
@@ -177,7 +193,8 @@
     padding: 0;
     border: none;
     width: 260px;
-    margin: 50px auto;
+    margin: 0 auto;
+    
 }
 
 .filter-price * {
@@ -189,10 +206,8 @@
 }
 
 .filter-price legend {
-    font-size: 18px;
-    line-height: 24px;
     text-transform: uppercase;
-    font-weight: 700;
+    margin-bottom: 54px;
 }
 
 .range-controls {

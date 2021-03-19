@@ -223,7 +223,6 @@ main h1 {
     align-items: center;
     margin: 80px 0;
 }
-
 .Partners .main-width,
 .Partners .Partners__list {
     height: 100%;
@@ -245,4 +244,11 @@ main h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: .2;
+}
+.Partners__item:hover{
+    opacity: 1;
+}
+.Partners__item:active{
+    opacity: .2;
 }

@@ -128,19 +128,19 @@
                                 <legend>Сортировка:</legend>
                                 <h2>Сортировка:</h2>
                                 <ul class="sort-list">
-                                    <li>
+                                    <li class="sort-item">
                                         <input type="checkbox" name="price" id="Sorting-price" checked>
                                         <label for="Sorting-price">По цене</label>
                                     </li>
-                                    <li>
+                                    <li class="sort-item">
                                         <input type="checkbox" name="Type" id="Sorting-Type">
                                         <label for="Sorting-Type">Блок типу</label>
                                     </li>
-                                    <li>
+                                    <li class="sort-item">
                                         <input type="checkbox" name="name" id="Sorting-name" checked>
                                         <label for="Sorting-name">по названию</label>
                                     </li>
-                                    <li>
+                                    <li class="sort-item">
                                         <div class="descending-order">
 
                                         </div>
@@ -201,7 +201,7 @@
                         </li>
                     </ul>
                     <ul class="pages-list">
-                        <li class="pages-item"><a href="#">1</a></li>
+                        <li class="pages-item active"><a href="#">1</a></li>
                         <li class="pages-item"><a href="#">2</a></li>
                         <li class="pages-item"><a href="#">3</a></li>
                         <li class="pages-item">
@@ -267,16 +267,16 @@
                 <div class="pop-DataPerson">
                     <p>
                         <label for="name" class="pop__label">Ваше имя:</label>
-                        <input type="text" placeholder="Имя Фамилия" id="name" class="pop__InputText Input-Text">
+                        <input type="text" placeholder="Имя Фамилия" id="name" class="pop__InputText Input-Text" required>
                     </p>
                     <p>
                         <label for="email" class="pop__label">Ваш email:</label>
-                        <input type="email" placeholder="email@example.com " id="email" class="pop__InputText Input-Text">
+                        <input type="email" placeholder="email@example.com " id="email" class="pop__InputText Input-Text" required>
                     </p>
                 </div>
                 <p class="pop-message">
                     <label for="message" class="pop__label">Текст письма:</label>
-                    <textarea id="message" placeholder="В свободной форме" class="pop__InputText Input-Text"></textarea>
+                    <textarea id="message" placeholder="В свободной форме" class="pop__InputText Input-Text" required rows="4"></textarea>
                 </p>
                 <button type="submit" class="button button-style1">Отправить</button>
             </form>
