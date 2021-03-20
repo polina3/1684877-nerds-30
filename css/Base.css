@@ -44,7 +44,7 @@
 body {
     font-family: Roboto, Arial, Helvetica, sans-serif;
     font-size: 14px;
-    color: var(--color-text1)
+    color: var(--color-text1) pocition: relative
 }
 
 header {
@@ -89,15 +89,19 @@ nav {
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
-.nav-text__item a{
+
+.nav-text__item a {
     text-transform: uppercase;
 }
+
 .logo {
     grid-row: 1/ -1;
 }
-.logo:active{
+
+.logo:active {
     opacity: .5;
 }
+
 .menu-text {
     justify-self: center;
     grid-row: 2;
@@ -244,9 +248,10 @@ nav {
     transition: .3s;
 }
 
-.social-network__item:active img{
+.social-network__item:active img {
     opacity: .3;
 }
+
 .social-network__item img {
     grid-row: 2;
     grid-column: 2;
@@ -364,14 +369,18 @@ nav {
 
 /*pop*/
 
+.pop-box {
+    width: 100vw;
+    position: absolute;
+    bottom: 190px;
+}
+
 .pop {
+    margin: 0 auto;
     display: none;
     width: 960px;
     height: 528px;
     padding: 63px 100px 84px 100px;
-    position: absolute;
-    left: 240px;
-    top: 1706px;
     background: #fff;
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
 }
@@ -419,20 +428,25 @@ nav {
 .pop__InputText {
     width: 100%;
 }
-.pop__InputText:invalid{
+
+.pop__InputText:invalid {
     border: 2px solid #E74246;
 }
-.pop__InputText:invalid::-webkit-input-placeholder{
+
+.pop__InputText:invalid::-webkit-input-placeholder {
     color: #E74246;
 }
+
 .pop .button {
     width: 259px;
     height: 50px;
 }
 
-.pop textarea{
+.pop textarea {
     height: auto;
 }
+
+
 /*radio*/
 
 .radio-img {
