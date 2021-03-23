@@ -244,7 +244,7 @@ main h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: .2;
+    opacity: .1;
 }
 .Partners__item:hover{
     opacity: 1;
