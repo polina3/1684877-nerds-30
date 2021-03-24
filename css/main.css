@@ -360,6 +360,7 @@ nav {
 /*pop*/
 
 .pop-box {
+    
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -367,6 +368,7 @@ nav {
     align-items: center;
     position: fixed;
     top: 0;
+    display: none;
 }
 
 .pop {
