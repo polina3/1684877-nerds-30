@@ -1,5 +1,3 @@
-
-
 /*переменные*/
 
 :root {
@@ -19,7 +17,6 @@
     --color-text2: #666;
     --color-text3: #000;
 }
-
 
 /*теги*/
 
@@ -55,7 +52,6 @@ ol {
     list-style-type: none;
 }
 
-
 /*класс для размера*/
 
 .main-width {
@@ -64,7 +60,6 @@ ol {
     width: 100%;
     margin: 0 auto;
 }
-
 
 /*шапка*/
 
@@ -77,13 +72,16 @@ nav {
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
+
 .nav-text__item,
 .nav-text__item a {
     text-transform: uppercase;
 }
+
 .nav-text__item.active{
     border-bottom: 2px solid #FB565A;
 }
+
 .logo {
     grid-row: 1/ -1;
 }
@@ -139,7 +137,6 @@ nav {
     vertical-align: middle;
     margin: 0;
 }
-
 
 /*подвал*/
 
@@ -248,7 +245,6 @@ nav {
     justify-self: center;
 }
 
-
 /*поля ввода*/
 
 .Input-Text {
@@ -278,7 +274,6 @@ nav {
     border-color: var(--color-Defolt1-hover);
     transition: .3s;
 }
-
 
 /*кнопки*/
 
@@ -356,7 +351,6 @@ nav {
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
-
 /*pop*/
 
 .pop-box {
@@ -373,7 +367,6 @@ nav {
 
 .pop {
     margin: 0 auto;
-    /*display: none;*/
     width: 960px;
     padding: 63px 100px 84px 100px;
     background: #fff;
@@ -443,7 +436,6 @@ nav {
     height: auto;
 }
 
-
 /*radio*/
 
 .radio-img {
@@ -473,7 +465,6 @@ nav {
 input[type="radio"]:checked+.radio-img:before {
     background-color: #4d4d4d4d;
 }
-
 
 /*checkbox*/
 
@@ -515,7 +506,6 @@ input[type="checkbox"]:checked+.checkbox-img:before {
 main h1 {
     display: none;
 }
-
 
 /*особенности*/
 
@@ -564,7 +554,6 @@ main h1 {
 .features__item:not(.activ) {
     display: none;
 }
-
 
 /*продукты*/
 
@@ -727,6 +716,7 @@ main h1 {
     align-items: center;
     margin: 80px 0;
 }
+
 .Partners .main-width,
 .Partners .Partners__list {
     height: 100%;
@@ -750,9 +740,11 @@ main h1 {
     align-items: center;
     opacity: .1;
 }
+
 .Partners__item:hover{
     opacity: 1;
 }
+
 .Partners__item:active{
     opacity: .2;
 }
@@ -893,16 +885,20 @@ main h1 {
     background-color: #fff;
     border: 3px solid #DBDBDB;
 }
+
 .pages-item:hover{
     background-color: #DFDFDF;
 }
+
 .pages-item:active{
     background-color: #D5D5D5;
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1)
 }
+
 .pages-item:active a{
     opacity: .3;
 }
+
 .filter-form fieldset {
     display: block;
     margin-bottom: 50px;
@@ -1101,7 +1097,6 @@ main h1 {
     font-size: inherit;
 }
 
-
 .brow-header{
     width: 100%;
     border-radius: 5px 5px 0 0;
@@ -1110,6 +1105,7 @@ main h1 {
     opacity: 0.12;
     padding: 13px 16px;
 }
+
 .brow-header__item{
     display: inline-block;
     width: 14px;
